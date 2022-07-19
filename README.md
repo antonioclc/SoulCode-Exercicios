@@ -4,6 +4,6 @@
 
   
 <h2>Sobre a Soul Code </h2>
-<p>Tech For Good, ou seja, Tecnologia Para o Bem. Esta é a base onde construímos uma escola inclusiva que educa e capacita, gerando emprego para todos, no início ou no decorrer de suas carreiras em tecnologia. Prezamos pelo bem-estar e pelo equilíbrio entre a vida pessoal e profissional de nossos alunos. Assim fazemos do nosso negócio um verdadeiro agente de transformação social.</p>
+<q>Tech For Good, ou seja, Tecnologia Para o Bem. Esta é a base onde construímos uma escola inclusiva que educa e capacita, gerando emprego para todos, no início ou no decorrer de suas carreiras em tecnologia. Prezamos pelo bem-estar e pelo equilíbrio entre a vida pessoal e profissional de nossos alunos. Assim fazemos do nosso negócio um verdadeiro agente de transformação social.</q>
 <p><b>Fonte:</b> <a  href="https://soulcodeacademy.org/sobre-nos" target="_blank"  rel="noreferrer"> https://soulcodeacademy.org/sobre-nos</a></p>
 
