@@ -21,6 +21,7 @@ public class AccountTriggerTest {
             AnnualRevenue = -1
         );
         Database.SaveResult res = Database.update(accEditada, false);
+        system.debug(res.getErrors());
         System.assertEquals('O campo receita Anual está invalido!', res.getErrors()[0].getMessage());
         System.assertEquals('FIELD_CUSTOM_VALIDATION_EXCEPTION', String.ValueOf(res.getErrors()[0].getStatusCode()));
     }
@@ -32,5 +33,13 @@ public class AccountTriggerTest {
         System.assertEquals('Phone', String.ValueOf(res.getErrors()[0].getFields()[0]));
         System.assertEquals('O campo do telefone deve ser preenchido', res.getErrors()[0].getMessage());
         System.assertEquals('FIELD_CUSTOM_VALIDATION_EXCEPTION', String.ValueOf(res.getErrors()[0].getStatusCode()));
+    }
+    @isTest
+    public static void testTarefaInsert() {
+        Account acc = new Account(Name = 'Realizando teste da tarefa', Phone = '123456', AnnualRevenue = 5000000);
+        insert acc;
+        Task taskAcc = [SELECT Subject, Priority, whatId FROM Task WHERE whatId =: acc.Id];
+        System.assertEquals('dar boas vindas a ' + acc.Name, taskAcc.Subject);
+        System.assertEquals('Low', taskAcc.Priority);
     }
 }
