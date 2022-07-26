@@ -141,11 +141,11 @@ function newContent() {
     document.open();
     document.write('<h1>Dados do Carro:</h1>');
     document.write('<p>Marca: ' + carro[0].marca + '<p>');
-    document.write('<p>Marca: ' + carro[0].modelo + '<p>');
-    document.write('<p>Marca: ' + carro[0].cor + '<p>');
-    document.write('<p>Marca: ' + carro[0].ano + '<p>');
-    document.write('<p>Marca: ' + carro[0].renavam + '<p>');
-    document.write('<p>Marca: ' + carro[0].placa + '<p>');
+    document.write('<p>Modelo: ' + carro[0].modelo + '<p>');
+    document.write('<p>Cor: ' + carro[0].cor + '<p>');
+    document.write('<p>Ano: ' + carro[0].ano + '<p>');
+    document.write('<p>Renavam: ' + carro[0].renavam + '<p>');
+    document.write('<p>Placa: ' + carro[0].placa + '<p>');
     document.close();
 }
 
