@@ -43,10 +43,10 @@ if (num % 2 === 0) {
 // 06 - Escreva um programa que leia três números e mostre o maior entre eles.
 // fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 
-let numeros = [4, 20, 5];
+const numeros = [4, 20, 5];
 
 numeros.sort(function(a, b) {
-  return a - b;
+    return a - b;
 });
 
 console.log('O número maior é -> ' + numeros[numeros.length - 1]);
@@ -86,7 +86,7 @@ if (classificação === 5) {
 
 // a. São bissextos os anos: 1600, 1996, 2000, 2004, 2008, 2012, 2016, 2400, 2800, ...
 // b. Não são bissextos: 1500, 1974, 1982, 1983, 1990, 2018, 2022, 2030, 2038, ...
- 
+
 const _ano = 2200;
 
 if (_ano % 4 === 0) {
@@ -119,7 +119,7 @@ console.log('Você tem R$' + dinheiro + ', pode comprar ' + quantidadeLitros + '
 
 const numero1 = 10;
 const numero2 = 5;
-const codigo = 3;
+const codigo = 3;   
 
 const resposta = codigo === 1? numero1 + numero2 : codigo === 2? numero1 * numero2 : numero1 / numero2;
 
