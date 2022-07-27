@@ -173,5 +173,9 @@ function dayOfTheWeek(dayNumber) {
     7: 'Sábado',
   }
 
-  console.log(`Hoje é ${tableDays[dayNumber]}, tenha um lindo dia! 🐸`)
+  if(tableDays[dayNumber] !== undefined) {
+    console.log(`Hoje é ${tableDays[dayNumber]}, tenha um lindo dia! 🐸`)
+  } else {
+    console.log('Valor inválido!')
+  }
 }
