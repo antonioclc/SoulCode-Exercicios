@@ -1,0 +1,28 @@
+{
+  "name": "soulcode-exercicios",
+  "version": "1.0.0",
+  "description": "<img src=\"https://github.com/antonioclc/SoulCode-Exercicios/blob/main/capa%20soul%20code.png?raw=true\"> <h1>Repositório de Exercícios da Soul Code </h1> <p>Este repositório tem como objetivo salvar todos os exercícios dados durante o bootcamp de Desenvolvedor Salesforce na <a  href=\"https://soulcodeacademy.org/\" target=\"_blank\"  rel=\"noreferrer\">SoulCode</a>. Iniciado em 30/05, este curso tem duração de 12 semanas com formato de aula online e ao vivo com foco na gestão de vendas utilizando a plataforma Salesforce juntamente com sua linguagem Apex. Mais detalhes sobre o bootcamp <a  href=\"https://soulcodeacademy.org/curso-desenvolvedor-salesforce\" target=\"_blank\"  rel=\"noreferrer\">clique aqui</a>!<br /><br />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioclc/SoulCode-Exercicios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonioclc/SoulCode-Exercicios/issues"
+  },
+  "homepage": "https://github.com/antonioclc/SoulCode-Exercicios#readme",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "install": "^0.13.0"
+  },
+  "dependencies": {
+    "eslint-config-trybe-fundamentals": "^1.1.1"
+  }
+}
