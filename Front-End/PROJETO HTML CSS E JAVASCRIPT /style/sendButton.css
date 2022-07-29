@@ -1,0 +1,64 @@
+/* From uiverse.io by @adamgiebl */
+.sendbutton {
+  font-family: inherit;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #37a7c0;
+  color: rgb(57, 57, 57);
+  padding: 0.7em 1.2em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin-top: 30px;
+  border: 1px solid rgba(129, 236, 239, 0.64);
+  border-radius: 50px;
+  box-shadow: 0px 6px 20px 1px #5a5a5a;
+  background-image: linear-gradient(
+    to bottom right,
+    #F2CB05 0%, #F2CB05 20%, #37a7c0 60%, #37a7c0 100%
+  );
+  background-size: 200% 200%;
+  animation: moveGradient 3s linear infinite alternate;
+}
+
+.sendbutton span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.sendbutton svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sendbutton:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.sendbutton:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.sendbutton:hover span {
+  transform: translateX(5em);
+}
+
+.sendbutton:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+  transform: translateY(0.1em);
+  }
+
+  to {
+  transform: translateY(-0.1em);
+  }
+}

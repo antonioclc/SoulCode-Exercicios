@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style_index.css" type="text/css">
+  <link rel="stylesheet" href="./style/button.css" type="text/css">
+  <link rel="stylesheet" href="./style/sendButton.css" type="text/css">
+  <link rel="stylesheet" href="./style/checkbox.css" type="text/css">
+  <script src="./script_index.js"></script>
+  <title>Soul Quadros</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <a href="./index.html" class="buttonlogo">
+        <img src="./imagens/SOUL QUADROS.png" class="logo">
+      </a>
+    </div>
+    <nav class="header-rigth">
+      <a href="./produtos.html">
+        <button class="button">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front text">Produtos</span>
+        </button>
+      </a>
+      <a href="./cadastrase.html">
+        <button class="button">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front text">Cadastre-se</span>
+        </button>
+      </a>
+      <a href="./sobreNos.html">
+        <button class="button">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front text">Sobre nós</span>
+        </button>
+      </a>
+    </nav>
+  </header>
+  <main class="index">
+    <h1>Cadastro</h1>
+    <div class="input-box">
+      <input class="input" type="text" id="nome" name="nome"  placeholder="Nome"/>
+      <input class="input" type="text" id="cpf" name="cpf"  placeholder="CPF"/>
+    </div>
+    <div class="input-box">
+      <input class="input" type="text" id="telefone" name="telefone"  placeholder="Telefone"/>
+      <input class="input" type="email" id="email" name="email"  placeholder="Email"/>
+    </div>
+    <div class="checkbox">
+      <div class="cntr">
+        <input checked="" type="checkbox" id="cbx" class="hidden-xs-up">
+        <label for="cbx" class="cbx"></label>
+      </div>
+      <p>Aceito receber e-mails promocionais</p>
+    </div>
+    <button class="sendbutton" onclick="mostrarCadastro()">
+        <div class="svg-wrapper-1">
+          <div class="svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+            </svg>
+          </div>
+        </div>
+      <span>Enviar</span>
+    </button>
+  </main>
+  <footer class="footer">
+    <p class="nomes">Desenvolvido por: Antônio, Débora, Lucas e Paulo Lopes</p>
+    <div class="footer-soulcode">
+      <p>Conheça a SoulCode Academy</p>
+      <a href="https://www.instagram.com/soulcodeacademy/?hl=pt-br" target="_blank"   rel="noreferrer" style="margin-left: 10px;">
+        <img src="https://github.com/antonioclc/antonioclc/blob/main/logo-instagram-by-www.flaticon.com.png?raw=true" alt="instagram" width="35" height="35" hspace="8" class="footer-social-networks-icon"/>
+      </a>
+      <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"   rel="noreferrer">
+        <img src="https://github.com/antonioclc/antonioclc/blob/main/logo-linkedin-by-www.flaticon.com.png?raw=true" alt="instagram" width="35" height="35" hspace="8" class="footer-social-networks-icon"/>
+      </a>
+    </div>      
+  </footer>
+</body>
+</html>
