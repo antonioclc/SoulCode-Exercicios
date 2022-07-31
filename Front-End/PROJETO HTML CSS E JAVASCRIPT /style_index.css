@@ -504,7 +504,6 @@
     align-items: center;
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
-    margin: 13px;
     width: 270px;
     height: 380px;
     padding-bottom: 10px;
@@ -524,7 +523,7 @@
 
   .quadro img:hover {
     position: absolute;
-    transition: 0.5s;
+    transition: 0.8s;
     width: 420px;
   }
 
@@ -624,6 +623,7 @@
     transition: 300ms;
     box-shadow: 0px 0px 8px 4px #f8f8f8;
   }
+
   .gradient-border {
     margin-top: 20px;
     --borderWidth: 3px;
@@ -632,6 +632,7 @@
     border-radius: var(--borderWidth);
     box-shadow: 0px 0px 30px #5a5a5a;
   }
+
   .gradient-border:after {
     content: '';
     position: absolute;
@@ -645,8 +646,7 @@
     animation: animatedgradient 1s ease alternate infinite;
     background-size: 300% 300%;
   }
-  
-  
+
   @keyframes animatedgradient {
     0% {
       background-position: 0% 50%;
