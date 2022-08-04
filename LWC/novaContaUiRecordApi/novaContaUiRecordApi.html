@@ -1,0 +1,10 @@
+<template>
+	<lightning-card title="Nova Conta" icon-name="standard:record">
+      <div class="slds-m-around_medium">
+			<lightning-input type="text" label="Nome" name="Name" onchange={handleInputChange}></lightning-input><br>
+			<lightning-input type="phone" label="Telefone" name="Phone" onchange={handleInputChange}></lightning-input><br>
+			<lightning-input type="phone" label="Receita Anual" name="AnnualRevenue" onchange={handleInputChange}></lightning-input><br>
+			<lightning-button variant="brand" label="Salvar" onclick={handleOnClick} class="slds-m-left_x-small"></lightning-button><br><br>
+		</div>
+	</lightning-card>
+</template>

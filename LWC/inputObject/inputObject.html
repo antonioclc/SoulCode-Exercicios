@@ -1,0 +1,48 @@
+<template>
+  <lightning-card>
+    <div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">{pessoa.primeironome} {pessoa.sobrenome}</h1>
+			<p>Email: {pessoa.email}</p>
+			<p>Website: {pessoa.website}</p>
+			<p>Empresa: {pessoa.empresa}</p>
+			<br>
+		</div>
+		<div class="slds-m-around_medium">
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="text-input-id-01">
+				<abbr class="slds-required" title="required">* </abbr>Primeiro Nome:</label>
+				<div class="slds-form-element__control">
+					<input onchange={handleInputChange} type="text" name='primeironome' id="text-input-id-01" placeholder="inisira aqui o novo nome..." required="" class="slds-input" />
+				</div>
+			</div>
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="text-input-id-02">
+				<abbr class="slds-required" title="required">* </abbr>Sobrenome:</label>
+				<div class="slds-form-element__control">
+					<input onchange={handleInputChange} type="text" name='sobrenome' id="text-input-id-02" placeholder="inisira aqui o novo telefone..." required="" class="slds-input" />
+				</div>
+			</div>
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="text-input-id-03">
+				<abbr class="slds-required" title="required">* </abbr>Email:</label>
+				<div class="slds-form-element__control">
+					<input onchange={handleInputChange} type="text" name='email' id="text-input-id-03" placeholder="inisira aqui o novo telefone..." required="" class="slds-input" />
+				</div>
+			</div>
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="text-input-id-04">
+				<abbr class="slds-required" title="required">* </abbr>Website:</label>
+				<div class="slds-form-element__control">
+					<input onchange={handleInputChange} type="text" name='website' id="text-input-id-04" placeholder="inisira aqui o novo telefone..." required="" class="slds-input" />
+				</div>
+			</div>
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="text-input-id-05">
+				<abbr class="slds-required" title="required">* </abbr>Empresa:</label>
+				<div class="slds-form-element__control">
+					<input onchange={handleInputChange} type="text" name='empresa' id="text-input-id-05" placeholder="inisira aqui o novo telefone..." required="" class="slds-input" />
+				</div>
+			</div>
+		</div>
+	</lightning-card>
+</template>

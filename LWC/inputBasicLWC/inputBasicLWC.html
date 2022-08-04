@@ -1,0 +1,14 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">{nome}</h1>
+			<p>Peso: {peso}</p>
+			<p>Altura: {altura}</p>
+			<p>IMC: {imc}</p>
+			<br>
+		</div>
+		<lightning-button variant="brand" label="Calcular IMC!" title="Culcula IMC" onclick={CalcularIMC}
+			class="slds-m-left_x-small">
+		</lightning-button>
+	</lightning-card><br>
+</template>
