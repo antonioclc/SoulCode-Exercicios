@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="num1" type="Decimal" description="Número 1"/>
+    <aura:attribute name="num2" type="Decimal" description="Número 2"/>
+    <aura:attribute name="resultado" type="Decimal" description="Resultado Calculadora"/>
+    <aura:attribute name="tempA" type="Decimal" description="Temperatura atual"/>
+    <aura:attribute name="tempR" type="Decimal" description="Resultado Temperatura"/>
+    <aura:attribute name="peso" type="Decimal" description="Peso"/>
+    <aura:attribute name="altura" type="Decimal" description="Altura"/>
+    <aura:attribute name="imc" type="Decimal" description="IMC"/>
+
+    <div class="slds-box slds-theme_default" aura:id="div1">
+        <h1 class="slds-text-heading_large">Calculadora</h1>
+        <p>Número 1:</p>
+        <input onchange='{!c.handleInputChange}' type="number" name='num1' placeholder="inisira aqui o primeiro número..." class="slds-input" />
+        <p>Número 2:</p>
+        <input onchange='{!c.handleInputChange}' type="number" name='num2' placeholder="inisira aqui o segundo número..." class="slds-input" />
+        <p class='respostas'><b>Resultado: {!v.resultado}</b></p>
+        <br/>
+        <lightning:button variant="brand" label="Somar" title="Brand action" onclick="{!c.somar}" />
+        <lightning:button variant="brand" label="Subtrair" title="Brand action" onclick="{!c.subtrair}" />
+        <lightning:button variant="brand" label="Dividir" title="Brand action" onclick="{!c.dividir}" />
+        <lightning:button variant="brand" label="Multiplicar" title="Brand action" onclick="{!c.multiplicar}" />
+        <br/><br/>
+        <h1 class="slds-text-heading_large">Conversor de temperatura</h1>
+        <p>Temperatura em °C:</p>
+        <input onchange='{!c.handleInputChange}' type="number" name='tempA' placeholder="inisira aqui a temperatura atual..." class="slds-input" />
+        <p class='respostas'><b>Resultado da conversão: {!v.tempR}</b></p>
+        <br/>
+        <lightning:button variant="brand" label="°C para °F" title="Brand action" onclick="{!c.CparaF}" />
+        <lightning:button variant="brand" label="°C para K" title="Brand action" onclick="{!c.CparaK}" />
+        <br/><br/>
+        <h1 class="slds-text-heading_large">IMC</h1>
+        <p>Peso:</p>
+        <input onchange='{!c.handleInputChange}' type="number" name='peso' placeholder="inisira aqui o peso..." class="slds-input" />
+        <p>Altura:</p>
+        <input onchange='{!c.handleInputChange}' type="number" name='altura' placeholder="inisira aqui o altura..." class="slds-input" />
+        <p class='respostas'><b>Resultado IMC: {!v.imc}</b></p>
+        <br/>
+        <lightning:button variant="brand" label="Calcular IMC" title="Brand action" onclick="{!c.calcularIMC}" />
+        <br/>
+    </div>
+</aura:component>
